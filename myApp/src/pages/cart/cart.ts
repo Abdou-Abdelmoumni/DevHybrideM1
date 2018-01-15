@@ -14,10 +14,10 @@ export class CartPage {
   }
 
   ngOnInit() {
-  this.getProducts();
+  this.getCartItems();
 }
 
-  getProducts(): void {
+  getCartItems(): void {
     this.productService.getCartItems()
       .subscribe(cartList => this.cartList = cartList);
   }
